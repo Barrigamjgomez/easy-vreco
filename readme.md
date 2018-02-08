@@ -11,5 +11,5 @@
   Diseño personalizado
 
 - Los imput deben tener Autocompletado
-- Al poner direcciones en ambos imput y presiónar boton ruta 
+- Al poner direcciones en ambos imput y presiónar botón ruta,
   debera trazar la ruta.-

@@ -3,13 +3,43 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<title>easy-vrecot</title>
+	
+	<title>easy-vreco</title>
 </head>
 <body>
+   
+<div class="row">
+	<div class="col-md-12 header">
+		<p>easy-vreco</p>
+	</div>
+</div>
+<div class="row container botones-cont pac-card">
+	<div class="col-md-2 col-md-offset-2">
+		<button  id="encuentrame" class="btn btn-warning">Tú Ubicación</button>
+	</div>
+	<div class="col-md-3">
+		<div class="input-group">	  
+		  <input type="text" class="form-control" id="punto-partida" placeholder="Ingresa Punto de partida" aria-describedby="basic-addon1">
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="input-group">
+		  <input type="text" class="form-control" id="punto-destino" placeholder="Ingresa Punto de Destino" aria-describedby="basic-addon1">
+		</div>
+	</div>
+	<div class="col-md-2">
+		<button  id="traza-ruta" class="btn btn-warning">Traza tú Ruta</button>
+	</div>
 	
-
-	<script src="assets/js/app.js"></script>
+	
+</div> <!-- boton donde se muestra la funcion-->
+	<div id="map"></div><!--es donde se va a dibujar el mapa-->
 </body>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQR-IzNqilZZN5cpQI6z2cIIMsx9cM21s&callback=initMap&libraries=places">
+    </script>
+	<script src="assets/js/app.js"></script>
 </html>
